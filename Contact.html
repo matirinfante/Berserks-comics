@@ -21,66 +21,73 @@
 
 
     <body>
-<div class="contenedor-principal">
-       <header>
-        <div class="header">
-            <h1 class="titulo"> Berserk's Comics </h1>
-        </div>
-		
-        <div class="navbar" id="navbar">
-            <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a> 
-            <a href="about.html"><i class="fas fa-user-astronaut"></i> Nosotros</a> 
-            <a class="active" href="Contact.html"><i class="fa fa-fw fa-envelope"></i> Contacto</a> 
-            <a href="reseña.html"><i class="fa fa-fw fa-user"></i> Reseñas</a>
-        </div>
-		</header>
-        <div class="contenedor">
-            <section class="formulario">
-                <!--Titulo del Formulario -->
-                <h1 class="my-3">Contacto</h1>
+        <div class="contenedor-principal">
+            <header>
+                <div class="header">
+                    <h1 class="titulo"> Berserk's Comics </h1>
+                </div>
 
-                <form action="" onsubmit="return validarFormulario()">
+                <div class="navbar" id="navbar">
+                    <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+                    <a href="about.html"><i class="fas fa-user-astronaut"></i> Nosotros</a> 
+                    <a class="active" href="Contact.html"><i class="fa fa-fw fa-envelope"></i> Contacto</a> 
+                    <a href="reseña.html"><i class="fa fa-fw fa-user"></i> Reseñas</a>
+                </div>
+            </header>
+            <div class="contenedor">
+                <section class="formulario">
+                    <!--Titulo del Formulario -->
+                    <h1 class="my-3">Contacto</h1>
 
-                    <div class="row">
-                        <!--Insertar el nombre-->
-                        <div class="col-25">
-                            <label for="nombre">Nombre:</label>
+                    <form action="" onsubmit="return validarFormulario()">
+
+                        <div class="row">
+                            <!--Insertar el nombre-->
+                            <div class="col-25">
+                                <label for="nombre">Nombre:</label>
+                            </div>
+
+                            <div class="col-75">
+                                <input id="nombre" type="text" name="nombre" placeholder="Nombre" required="" />
+                            </div>
+
                         </div>
 
-                        <div class="col-75">
-                            <input id="nombre" type="text" name="nombre" placeholder="Nombre" required="" />
+
+                        <div class="row">
+                            <!--Insertar el mail-->
+                            <div class="col-25">
+                                <label for="email">Email:</label>
+                            </div>
+                            <div class="col-75">
+                                <input id="email" type="email" name="email" placeholder="ejemplo@correo.com" required="" />
+                            </div>
                         </div>
 
-                    </div>
-
-
-                    <div class="row">
-                        <!--Insertar el mail-->
-                        <div class="col-25">
-                            <label for="email">Email:</label>
+                        <div class="row">
+                            <!--Insertar Texto-->
+                            <div class="col-25">
+                                <label for="mensaje">Mensaje:</label>
+                            </div>
+                            <div class="col-75">
+                                <textarea id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
+                            </div>
                         </div>
-                        <div class="col-75">
-                            <input id="email" type="email" name="email" placeholder="ejemplo@correo.com" required="" />
-                        </div>
-                    </div>
 
-                    <div class="row">
-                        <!--Insertar Texto-->
-                        <div class="col-25">
-                            <label for="mensaje">Mensaje:</label>
+                        <div class="row">
+                            <!--Insertar Texto-->
+                            <div class="col-25">
+                            </div>
+                            <div class="col-75">
+                                <!--Boton enviar-->
+                                <input id="submit" type="submit" name="submit" value="Enviar" />
+                            </div>
                         </div>
-                        <div class="col-75">
-                            <textarea id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
-                        </div>
-                    </div>
 
-                    <!--Boton enviar-->
-                    <div class="row">
-                        <input id="submit" type="submit" name="submit" value="Enviar" />
-                    </div>
-                </form>
 
-            </section>
+                    </form>
+
+                </section>
             </div>
             <footer>
                 <div class="autores">
@@ -101,7 +108,7 @@
                     <p>Copyright 2018</p>
                 </div>
             </footer>
-	        <script src="js/validacionFormulario.js"></script>
+            <script src="js/validacionFormulario.js"></script>
             <script src="js/topnav.js"></script>
         </div>
     </body>
