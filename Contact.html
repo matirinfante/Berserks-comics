@@ -1,72 +1,64 @@
 <!doctype html>
 <html>
-
     <head>
         <meta charset="utf-8">
-        <title>Contact</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="css/estilo.css" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="css/estilo.css">
         <link href="css/fontawesome-all.css" type="text/css" rel="stylesheet">
-
-
-        <!--favicon-->
-        <link rel="icon" href="images/contact.png">
-
-
-
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+        <link type="text/css" href="css/responsiveslides.css" rel="stylesheet">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="js/responsiveslides.min.js"></script>
+        <script src="js/slides.js"></script>	
+        <title>Home - Berserk's Comics</title>
     </head>
-
-
-
-
+    <!-- CUERPO --> 
     <body>
-
-        <div class="header">
-            <h1> Berserk's Comics </h1>
-        </div>
-
-        <div class="navbar" id="navbar">
-            <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a> 
-            <a href="about.html"><i class="fas fa-user-astronaut"></i> Nosotros</a> 
-            <a class="active" href="Contact.html"><i class="fa fa-fw fa-envelope"></i> Contacto</a> 
-            <a href="reseña.html"><i class="fa fa-fw fa-user"></i> Reseñas</a>
-        </div>
-
-        <div class="container">
-            <section class="formulario">
-                <!--Titulo del Formulario -->
-                <h1 class="my-3">Contacto</h1>
-
+        <div class="contenedor-principal">
+            <header>
+                <div class="header">
+                    <h1> Berserk's Comics </h1>
+                </div>
+                <div class="navbar" id="navbar">
+                    <a  href="#"><i class="fa fa-fw fa-home"></i> Home</a> 
+                    <a href="about.html"><i class="fas fa-user-astronaut"></i> Nosotros</a> 
+                    <a class="active" href="Contact.html"><i class="fa fa-fw fa-envelope"></i> Contacto</a> 
+                    <a href="reseña.html"><i class="fa fa-fw fa-user"></i> Reseñas</a>
+                </div>
+            </header>
+            <section class="contacto">
+                <h1 class="titulo">Contacto</h1>
                 <form action="" onsubmit="return validarFormulario()">
-                    <!--Insertar el nombre-->
                     <label for="nombre">Nombre:</label>
-                    <input id="nombre" type="text" name="nombre" placeholder="Nombre" required="" />
-
-                    <!--Insertar el mail-->
+                    <input id="nombre" type="text" name="nombre" placeholder="Nombre" required/>
                     <label for="email">Email:</label>
                     <input id="email" type="email" name="email" placeholder="ejemplo@correo.com" required="" />
-
-                    <!--Insertar Texto-->
                     <label for="mensaje">Mensaje:</label>
-
-
                     <textarea id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
-
-                    <!--Boton enviar-->
-                    <input id="submit" type="submit" name="submit" value="Enviar" />
+                    <input class="btn" id="submit" type="submit" name="submit" value="Enviar" />
                 </form>
-
             </section>
-
-            
-            
-
-
-            <script src="js/validacionFormulario.js"></script>
-            <script src="js/topnav.js"></script>
+          
+            <footer>
+                <div class="autores">
+                    <div class="autor">
+                        <h3>Lillo, Martínuli</h3>
+                        <p class="subtitulo">Desarrollador normal y corriente</p>
+                    </div>
+                    <div class="autor">
+                        <h3>Infante, Matias Ricardo</h3>
+                        <p class="subtitulo">Desarrollador normal y corriente</p>
+                    </div>
+                    <div class="autor">
+                        <h3>Morales, Matias Matt</h3>
+                        <p class="subtitulo">Desarrollador normal y corriente</p>
+                    </div>
+                </div>
+                <div class="derechos">
+                    <p>Copyright 2018</p>
+                </div>
+            </footer>
         </div>
-
     </body>
-
 </html>
+
