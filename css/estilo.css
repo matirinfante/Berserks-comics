@@ -117,11 +117,47 @@ header{
     padding: 20px;
     width: 100%;
 }
+-/* Contenedor de About */
 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* ESTILOS PARA CARDS */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: 15px;
+    text-align: center;
+    float: left;
+
+}
+
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+}
 .resenia{
     background: #fff;
     padding: 20px;
     width: 100%;
+	font-weight: 200;
+	text-indent: 2em;
+	text-align: justify;
 }
 .main .articulo{
     padding: 20px;
@@ -201,7 +237,7 @@ header{
 /*fin de articulos*/
 aside {
     width: 30%;
-    /*background: #000;*/
+    background: #000;
 }
 aside .contenedor-comics{
     padding: 22px;
@@ -373,9 +409,6 @@ textarea {
 }
 .error{
     border:medium solid red;
-}
-.footer{
-
 }
 
 /* Slides */
