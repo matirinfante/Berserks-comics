@@ -1,0 +1,18 @@
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var formulario = document.getElementsByClassName('aValidar');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(formulario, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('validado');
+      }, false);
+    });
+  }, false);
+})();

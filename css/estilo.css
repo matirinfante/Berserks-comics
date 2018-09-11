@@ -14,7 +14,7 @@
 }
 .titulo {
 	font-family: comic-ink;
-	font-size: 300%;
+	font-size: 300%;	
 }
 body{
     background: #263238;
@@ -159,6 +159,12 @@ button {
 	text-indent: 2em;
 	text-align: justify;
 }
+.img-resenia{
+	float: right;
+	width: 50%;
+	height: auto;
+	padding: 15px;
+}
 .main .articulo{
     padding: 20px;
     margin: 20px;
@@ -196,7 +202,8 @@ button {
 .main .articulo .portada img{
     width: 100%;
     vertical-align: top;
-}
+	}
+
 .main .articulo h2{
     margin-bottom: 20px;
     font-weight: normal;
@@ -229,7 +236,7 @@ button {
     opacity: 0.7;
 
 }
-.main .articulos article img:hover{
+.main .articulos article img{
     opacity: 1;
 }
 
@@ -563,7 +570,7 @@ textarea {
         top: 0;
         width: 100%;
     }
-
+	
 }
 @media screen and (max-width: 360px) {
     .navbar a {
@@ -602,6 +609,10 @@ textarea {
         width: 100%;
         margin: 20px 0;
     }
+	.img-resenia{
+		width: 100%;
+	}
+	
 }
 
 @media (max-width: 575.98px) {
@@ -654,6 +665,9 @@ textarea {
         width: 100%;
         margin-top: 0;
     }
+	.img-resenia{
+		width: 100%;
+	}
 }
 
 }
@@ -691,9 +705,19 @@ textarea {
         font-weight: 600;
         margin-bottom: 10px;
     }
-
 }
-
+@media (max-width:578px){
+	aside{
+		width: 100%;
+		height: auto;
+	}
+	.main{
+		width: 100%;
+	}
+	.navbar{
+		width: 100%;
+	}
+}
 @media (max-width: 991.98px) {
     .main .articulo .portada{
         padding: 0;

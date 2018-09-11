@@ -1,0 +1,44 @@
+@charset "utf-8";
+@font-face {
+	font-family: comic-ink;
+	src: url(../fonts/Comic-ink.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+
+}
+.titulo {
+	font-family: comic-ink;
+	font-size: 300%;	
+}
+body{
+    background: #263238;
+    background: #000 url('../images/fondo.jpg');
+    background-size: cover;
+    background-attachment: fixed; 
+    font-family:'Roboto', sans-serif;
+	padding-top: 50px; 
+}
+h1{
+    font-weight: 600;
+}
+.header {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
+	
+}
+
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+}
+.footer{
+	background: #2f2f2f;
+    color: #fff;
+	}
