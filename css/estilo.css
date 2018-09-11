@@ -23,11 +23,9 @@ body{
     background-attachment: fixed; 
     font-family:'Roboto', sans-serif;
 }
-
 h1{
     font-weight: 600;
 }
-
 /* Cabecera */
 .header{
     text-align: center;
@@ -37,7 +35,6 @@ h1{
     margin-right: auto;
 }
 /* Fin cabecera */
-
 .container{
     width: 75%;
     text-align: center;
@@ -47,12 +44,10 @@ h1{
     z-index: auto;
     padding-right: 15px;
     padding-left: 15px;
-
 }
 .left{
     text-align: left;
 }
-
 /* MENU */
 .navbar {
     background-color: #555;
@@ -117,13 +112,51 @@ header{
     padding: 20px;
     width: 70%;
 }
+.about{
+    background: #fff;
+    padding: 20px;
+    width: 100%;
+}
+
+.resenia{
+    background: #fff;
+    padding: 20px;
+    width: 100%;
+}
 .main .articulo{
     padding: 20px;
     margin: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .main .articulo .portada{
     margin-bottom: 20px;
+    width: 40%;
+    /*    padding: 20px;*/
+
 }
+/*contenido*/
+.main .articulo .contenido{
+    width: 60%;
+    padding: 20px;
+}
+.fa-circle{
+    color:#22f672;
+}
+.main .articulo .contenido .titulo-portada{
+    margin-bottom: 0px;
+}
+.main .articulo .contenido .titulo-secundario{
+    margin-bottom: 16px;
+}
+.main .articulo .contenido .generos{
+    margin-bottom: 16px;
+}
+.main .articulo .contenido .texto h3{
+    margin-bottom: 12px;
+}
+/*fin contenido*/
 .main .articulo .portada img{
     width: 100%;
     vertical-align: top;
@@ -138,14 +171,40 @@ header{
     font-size :15px;
     line-height: 22px;
 }
+
+/*articulos*/
+.main .articulos{
+    width: 100%;
+    background: rgba(255,255,255,0.7);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.main .articulos article{
+    width: 30%;
+}
+.main .articulos article h2{
+    font-size: 16px;
+    text-align: center;
+}
+.main .articulos article img{
+    width: 100%;
+    vertical-align: top;
+    opacity: 0.7;
+
+}
+.main .articulos article img:hover{
+    opacity: 1;
+}
+
+
+/*fin de articulos*/
 aside {
     width: 30%;
     /*background: #000;*/
-
 }
 aside .contenedor-comics{
     padding: 22px;
-    background: #000;
 }
 aside h2{
     color:#fff;
@@ -184,41 +243,10 @@ footer p{
     text-align: center;
 }
 /*Fin de footer*/
-/*Fin inicio de pagína*/
-
-/* Contenedor de About */
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-
-/* ESTILOS PARA CARDS */
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: 15px;
-    text-align: center;
-    float: left;
-
-}
-
-.title {
-    color: grey;
-    font-size: 18px;
-}
-
-button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
+/*pagina contacto*/
+.contacto{
+    background: #fff;
+    padding: 20px;
     width: 100%;
     font-size: 18px;
 }
@@ -244,16 +272,19 @@ button:hover, a:hover {
 	width: 100%;
 	background: rgba(255,255,255,1.00);
 }
-
-
-
+/*fin pagina contacto*/
+/*Fin inicio de pagína*/
 /* FORMULARIO */
-
+.contacto .titulo{
+    text-align: center;
+    font-size: 32px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 .my-3{
     margin-bottom:24px;
     margin-top:24px;
 }
-
 label {
     display:block;
     margin-top:20px;
@@ -268,16 +299,13 @@ label {
     border-radius: 5px;
 
 }
-
 form {
     margin:0 auto;
-    width:100%;
+    width:70%;
 }
 
 input, textarea {
-    /*width:380px;*/
-    float: left;
-    width: 95%;
+    width:100%;
     height:27px;
     background:#FFF;
     border:2px solid violet;
@@ -288,10 +316,30 @@ input, textarea {
     margin-bottom: 10px;
     color:darkblue;
     resize: vertical;
+
 }
+.contacto .btn{
+    margin: auto;
+    display: block;
+    padding: 0 16px ;
+    color:white;
+    font-size: 16px;
+    border: none;
+    background: #f6222b;
+}
+.contacto .btn:hover{
+    background: #9f1218;    
+    color:#fff;
+}
+
 
 textarea {
     height:150px;
+    max-height: 400px;
+    min-height: 150px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
 }
 
 .col-25{
@@ -312,7 +360,7 @@ textarea {
     width:85px;
     height:35px;
     border:none;
-    margin-top:5px;
+    margin-top:20px;
     cursor:pointer;
     margin-bottom: 20px;
     background-color: #4CAF50;
@@ -323,16 +371,10 @@ textarea {
     margin-left: 35%;
     float:none;
 }
-
 .error{
     border:medium solid red;
 }
-
-/* Pie de pagina */
-footer{
-    background-color: darkslategrey;
-    color:white;
-    padding: 5px;
+.footer{
 
 }
 
@@ -346,19 +388,16 @@ footer{
 .rslides {
     margin: 0 auto 40px;
 }
-
 .centrar{
     display: flex;
     justify-content: center;
 }
-
 .slides_container {
     margin-bottom: 50px;
     position: relative;
     float: left;
     width: auto;
 }
-
 .slides {
     position: relative;
     list-style: none;
@@ -491,16 +530,7 @@ footer{
         top: 0;
         width: 100%;
     }
-}
 
-
-
-@media screen and (min-width: 360px) {
-    .static {
-        position: fixed;
-        top: 0;
-        width: 100%;
-    }
 }
 @media screen and (max-width: 360px) {
     .navbar a {
@@ -517,17 +547,67 @@ footer{
         margin-left: 0px;
         margin-right: 0px;
     }
+    footer .autores{
+        flex-direction: column;
+        align-items: center;
 
-
+    }
+    footer .autores .autor{
+        margin-bottom: 10px;
+        margin-top:10px;
+    }
+    .main .articulo .contenido{ 
+        padding:0px;
+    }
+    .main .articulo .contenido p{ 
+        text-align: left;
+    }
+    .main .articulos{
+        padding: 10px;
+    }
+    .main .articulos article{
+        width: 100%;
+        margin: 20px 0;
+    }
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 575.98px) {
+    .main .articulos{
+        flex-wrap: wrap;
+    }
+    /*    .main .articulos article{
+            width: 50%;
+            margin: 0 16px;
+        }*/
+
     .callbacks_nav {
         top: 47%;
     }
     .static{
         width: 100%;
     }
+
+    .main .articulo .contenido{
+        width: 100%;
+    }
+    .main .articulo .portada {
+        padding-right: 0px;
+        padding-left: 0px;
+        width: 100%;
+    }
+    .main .articulo .contenido .estado p{ 
+        text-align: left;
+    }
+    footer .autores{
+        flex-direction: column;
+        align-items: center;
+
+    }
+    footer .autores .autor{
+        margin-bottom: 10px;
+        margin-top:10px;
+    }
+
     input{
         width: 100%;
         margin-top: 0;
@@ -543,7 +623,7 @@ footer{
     }
 }
 
-@media (max-width: 575.98px) {}
+}
 @media (max-width: 767.98px) {
     .main {
         width: 100%;
@@ -556,9 +636,36 @@ footer{
         width: 100%;
         flex-direction: row;
     }
+    .main .articulo .portada {
+        padding: 0px;
+        width: 100%;
+    }
+    .main .articulo .portada {
+        padding-right: 0px;
+        padding-left: 0px;
+        width: 100%;
+    }
+    .main .articulo .contenido{ 
+        padding:0px;
+        width: 100%;
+    }
+
+    .main .articulo .contenido p{ 
+        text-align: left;
+    }
+    .main .articulo .contenido .titulo-portada{
+        text-align: center;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
 
 }
 
-@media (max-width: 991.98px) {}
+@media (max-width: 991.98px) {
+    .main .articulo .portada{
+        padding: 0;
+    }
+
+}
 
 @media (max-width: 1199.98px) {}
