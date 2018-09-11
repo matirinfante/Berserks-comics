@@ -1,4 +1,8 @@
 @charset "utf-8";
+@font-face {
+	font-family: comic-ink;
+	src: url(../fonts/Comic-ink.otf);
+}
 /* CSS Document */
 *{
     margin: 0;
@@ -8,7 +12,10 @@
     -moz-box-sizing: border-box;
 
 }
-
+.titulo {
+	font-family: comic-ink;
+	font-size: 300%;
+}
 body{
     background: #263238;
     background: #000 url('../images/fondo.jpg');
@@ -195,8 +202,6 @@ header{
 aside {
     width: 30%;
     /*background: #000;*/
-    background: #000;
-
 }
 aside .contenedor-comics{
     padding: 22px;
@@ -243,6 +248,29 @@ footer p{
     background: #fff;
     padding: 20px;
     width: 100%;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+button:hover, a:hover {
+    opacity: 0.7;
+}
+
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.contenedor {
+	width: 100%;
+	background: rgba(255,255,255,1.00);
 }
 /*fin pagina contacto*/
 /*Fin inicio de pagína*/
@@ -264,6 +292,13 @@ label {
     letter-spacing:1px;
     font-size: 16px;
 }
+.formulario {
+    color: darkslategray;
+    background-color: #f2f2f2;
+    padding: 30px;
+    border-radius: 5px;
+
+}
 form {
     margin:0 auto;
     width:70%;
@@ -273,10 +308,15 @@ input, textarea {
     width:100%;
     height:27px;
     background:#FFF;
-    border:1px solid #4A148C;
+    border:2px solid violet;
     border-radius: 5px;
     padding:20px;
-    margin-top:10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 10px;
+    color:darkblue;
+    resize: vertical;
+
 }
 .contacto .btn{
     margin: auto;
@@ -302,6 +342,20 @@ textarea {
     min-width: 100%;
 }
 
+.col-25{
+    float: left;
+    width: 20%;
+    margin-top: 6px;
+}
+
+.col-75{
+    float: left;
+    width: 80%;
+    margin-top: 6px;
+}
+
+
+
 #submit {
     width:85px;
     height:35px;
@@ -309,6 +363,13 @@ textarea {
     margin-top:20px;
     cursor:pointer;
     margin-bottom: 20px;
+    background-color: #4CAF50;
+    color:white;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bold;
+    margin-left: 35%;
+    float:none;
 }
 .error{
     border:medium solid red;
@@ -498,7 +559,6 @@ textarea {
     .main .articulo .contenido{ 
         padding:0px;
     }
-
     .main .articulo .contenido p{ 
         text-align: left;
     }
@@ -526,6 +586,7 @@ textarea {
     .static{
         width: 100%;
     }
+
     .main .articulo .contenido{
         width: 100%;
     }
@@ -546,6 +607,21 @@ textarea {
         margin-bottom: 10px;
         margin-top:10px;
     }
+
+    input{
+        width: 100%;
+        margin-top: 0;
+    }
+
+    textArea{
+        width: 100%;
+    }
+
+    .col-25,.col-75{
+        width: 100%;
+        margin-top: 0;
+    }
+}
 
 }
 @media (max-width: 767.98px) {
