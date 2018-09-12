@@ -16,6 +16,10 @@
 	font-family: comic-ink;
 	font-size: 300%;	
 }
+.descripcion{
+	font-family: comic-ink;
+	padding-top: 20px;
+}
 body{
     background: #263238;
     background: #000 url('../images/fondo.jpg');
@@ -165,6 +169,12 @@ button {
 	height: auto;
 	padding: 15px;
 }
+.titulo-2{
+	border-bottom: dotted grey thin;
+ 	padding-bottom: 10px;
+	width: 100%;
+	margin-bottom: 10px;
+	}
 .main .articulo{
     padding: 20px;
     margin: 20px;
