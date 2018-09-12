@@ -42,3 +42,9 @@ h1{
 	background: #2f2f2f;
     color: #fff;
 	}
+.is-invalid{
+	border-color: red;
+}
+.is-valid{
+	border-color: green;
+}

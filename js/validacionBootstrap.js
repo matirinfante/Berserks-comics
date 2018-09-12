@@ -3,7 +3,7 @@
   'use strict';
   window.addEventListener('load', function() {
     // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var formulario = document.getElementsByClassName('aValidar');
+    var formulario = document.getElementsByClassName('needs-validation');
     // Loop over them and prevent submission
     var validation = Array.prototype.filter.call(formulario, function(form) {
       form.addEventListener('submit', function(event) {
@@ -11,7 +11,7 @@
           event.preventDefault();
           event.stopPropagation();
         }
-        form.classList.add('validado');
+        form.classList.add('was-validated');
       }, false);
     });
   }, false);

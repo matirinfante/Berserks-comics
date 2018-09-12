@@ -117,7 +117,7 @@ header{
     padding: 20px;
     width: 100%;
 }
--/* Contenedor de About */
+/* Contenedor de About */
 
 .row:after {
     content: "";
@@ -478,6 +478,7 @@ textarea {
     padding: 10px 20px;
     margin: 0;
     max-width: none;
+	text-align: center;
 }
 
 .slides_nav {
@@ -670,7 +671,7 @@ textarea {
 	}
 }
 
-}
+
 @media (max-width: 767.98px) {
     .main {
         width: 100%;
