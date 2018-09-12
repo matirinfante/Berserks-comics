@@ -29,7 +29,7 @@ h1{
 /* Cabecera */
 .header{
     text-align: center;
-    background: #78909C;
+    background: rgba(187,105,1,1.00);
     padding: 30px;
     margin-left: auto;
     margin-right: auto;
@@ -240,7 +240,10 @@ button {
     opacity: 1;
 }
 
-
+.divisor{
+	margin-bottom: 20px;
+	border-color: grey;
+}
 /*fin de articulos*/
 aside {
     width: 30%;
