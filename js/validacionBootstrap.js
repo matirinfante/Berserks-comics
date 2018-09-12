@@ -15,32 +15,61 @@ $('#form').bootstrapValidator({
  
 	 fields: {
  
-		 usuario: {
+		 nombre: {
  
 			 validators: {
  
 				 notEmpty: {
  
-					 message: 'El nombre de usuario es requerido'
+					 message: 'Ingrese nombre'
+ 
+				 },
+				 
+ 		regexp: {
+ 
+					 regexp: /^[a-zA-Z]+$/,
+ 
+					 message: 'El nombre solo debe contener caracteres'
  
 				 }
- 
 			 }
  
 		 },
  
-		 password: {
+		 email: {
  
 			 validators: {
  
 				 notEmpty: {
  
-					 message: 'La contraseña es requerida'
+					 message: 'Ingrese un email'
  
+				 },
+				 
+				 emailAddress: {
+					 message: 'Ingrese un E-Mail valido'
+				},
+				 regexp:{
+					 regexp: /.com+/,
+					 message: 'Falta .com'
 				 }
- 
 			 }
  
+		 },
+		 
+		 mensaje: {
+			 validators: {
+				 notEmpty: {
+					 message: 'Ingrese un mensaje'
+				 },
+				 stringLength: {
+ 
+					 min: 10,
+ 
+					 message: 'El mensaje debe contener al menos 10 caracteres'
+ 
+				 }
+			 }
 		 }
  
 	 }

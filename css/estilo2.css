@@ -48,3 +48,6 @@ h1{
 .is-valid{
 	border-color: green;
 }
+.panel-footer{
+	margin-bottom: 0;
+}
