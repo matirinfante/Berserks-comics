@@ -1,18 +1,48 @@
-// Example starter JavaScript for disabling form submissions if there are invalid fields
-(function() {
-  'use strict';
-  window.addEventListener('load', function() {
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var formulario = document.getElementsByClassName('needs-validation');
-    // Loop over them and prevent submission
-    var validation = Array.prototype.filter.call(formulario, function(form) {
-      form.addEventListener('submit', function(event) {
-        if (form.checkValidity() === false) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-        form.classList.add('was-validated');
-      }, false);
-    });
-  }, false);
-})();
+$(document).ready(
+$('#form').bootstrapValidator({
+ 
+	 message: 'Este valor no es valido',
+ 
+	 feedbackIcons: {
+ 
+		 valid: 'glyphicon glyphicon-ok',
+ 
+		 invalid: 'glyphicon glyphicon-remove',
+ 
+		 validating: 'glyphicon glyphicon-refresh'
+ 
+	 },
+ 
+	 fields: {
+ 
+		 usuario: {
+ 
+			 validators: {
+ 
+				 notEmpty: {
+ 
+					 message: 'El nombre de usuario es requerido'
+ 
+				 }
+ 
+			 }
+ 
+		 },
+ 
+		 password: {
+ 
+			 validators: {
+ 
+				 notEmpty: {
+ 
+					 message: 'La contraseña es requerida'
+ 
+				 }
+ 
+			 }
+ 
+		 }
+ 
+	 }
+ 
+}));
