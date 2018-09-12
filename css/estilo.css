@@ -1,7 +1,7 @@
 @charset "utf-8";
 @font-face {
-	font-family: comic-ink;
-	src: url(../fonts/Comic-ink.otf);
+    font-family: comic-ink;
+    src: url(../fonts/Comic-ink.otf);
 }
 /* CSS Document */
 *{
@@ -13,12 +13,12 @@
 
 }
 .titulo {
-	font-family: comic-ink;
-	font-size: 300%;	
+    font-family: comic-ink;
+    font-size: 300%;	
 }
 .descripcion{
-	font-family: comic-ink;
-	padding-top: 20px;
+    font-family: comic-ink;
+    padding-top: 20px;
 }
 body{
     background: #263238;
@@ -118,7 +118,7 @@ header{
 }
 .about{
     background: #fff;
-    padding: 20px;
+    padding: 26px;
     width: 100%;
 }
 /* Contenedor de About */
@@ -133,11 +133,8 @@ header{
 /* ESTILOS PARA CARDS */
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: 15px;
+    width: 30%;
     text-align: center;
-    float: left;
-
 }
 
 .title {
@@ -159,22 +156,22 @@ button {
     background: #fff;
     padding: 20px;
     width: 100%;
-	font-weight: 200;
-	text-indent: 2em;
-	text-align: justify;
+    font-weight: 200;
+    text-indent: 2em;
+    text-align: justify;
 }
 .img-resenia{
-	float: right;
-	width: 50%;
-	height: auto;
-	padding: 15px;
+    float: right;
+    width: 50%;
+    height: auto;
+    padding: 15px;
 }
 .titulo-2{
-	border-bottom: dotted grey thin;
- 	padding-bottom: 10px;
-	width: 100%;
-	margin-bottom: 10px;
-	}
+    border-bottom: dotted grey thin;
+    padding-bottom: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
 .main .articulo{
     padding: 20px;
     margin: 20px;
@@ -212,7 +209,7 @@ button {
 .main .articulo .portada img{
     width: 100%;
     vertical-align: top;
-	}
+}
 
 .main .articulo h2{
     margin-bottom: 20px;
@@ -251,16 +248,53 @@ button {
 }
 
 .divisor{
-	margin-bottom: 20px;
-	border-color: grey;
+    margin-bottom: 20px;
+    border-color: grey;
 }
 /*fin de articulos*/
 aside {
     width: 30%;
+    /*background: #000;*/
+}
+aside .busqueda-comics{
+    margin-top: 30px;
     background: #000;
+    padding: 22px;
+    background: #000;
+
+}
+aside .busqueda-comics h2{
+    margin-top: 10px;
+}
+aside .busqueda form{
+    display: flex;
+    /*flex-direction: row;*/
+    justify-content: space-between;
+    margin: 0px;
+    width: 100%;
+}
+aside .busqueda input{
+    width: 90%;
+}
+aside .busqueda button{
+    background: none;
+    border: none;
+}
+aside .busqueda i{
+    color:#fff;
+    font-size: 16px;
+}
+
+aside h2{
+    color:#fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 aside .contenedor-comics{
     padding: 22px;
+    background: #000;
+
 }
 aside h2{
     color:#fff;
@@ -317,7 +351,75 @@ button:hover, a:hover {
     opacity: 0.7;
 }
 
+/*ABOUT*/
+.contenedor-cartas{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.about .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 30%;
+    margin: 15px;
+    text-align: center;
+    padding-bottom: 16px;
 
+}
+.about .card .white{
+    color:#000;
+}
+.about .card .redes a{
+    transition: all 0.25s ease;   
+
+}
+.about .card .redes a:hover{
+    color:steelblue;
+}
+.about .card .titulo-card{
+    font-size: 24px;
+    margin-top: 15px;
+}
+.about .card .parrafo-titulo {
+    color: grey;
+    font-size: 15px;
+}
+.about .card .uni{
+    font-family: "Roboto";
+    font-weight: 300;
+}
+.about .titulo-about{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 34px;
+}
+.about .martin{
+    order:2;
+}
+.about .matt{
+    order:1;
+}
+.about .matias{
+    order:3;
+}
+.about .btn-contactar {
+    border-radius: 5px;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px 0;
+    border: 1px solid rgba(255,255,255,0);
+    border-radius: 5px;
+}
+.btn-contactar:hover{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+/*fin about*/
 /* On mouse-over, add a deeper shadow */
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -325,8 +427,8 @@ button:hover, a:hover {
 
 /* Add some padding inside the card container */
 .contenedor {
-	width: 100%;
-	background: rgba(255,255,255,1.00);
+    width: 100%;
+    background: rgba(255,255,255,1.00);
 }
 /*fin pagina contacto*/
 /*Fin inicio de pagína*/
@@ -359,12 +461,19 @@ form {
     margin:0 auto;
     width:70%;
 }
-
+.formulario .titulo{
+    font-family: "Roboto",sans-serif;
+    text-align: center;
+    font-size: 32px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color:#000;
+}
 input, textarea {
     width:100%;
     height:27px;
     background:#FFF;
-    border:2px solid violet;
+    border:2px solid rgba(153, 153, 255,0.5);
     border-radius: 5px;
     padding:20px;
     padding-left: 15px;
@@ -387,7 +496,9 @@ input, textarea {
     background: #9f1218;    
     color:#fff;
 }
-
+.resenia{
+    padding:34px;
+}
 
 textarea {
     height:150px;
@@ -491,7 +602,7 @@ textarea {
     padding: 10px 20px;
     margin: 0;
     max-width: none;
-	text-align: center;
+    text-align: center;
 }
 
 .slides_nav {
@@ -584,7 +695,7 @@ textarea {
         top: 0;
         width: 100%;
     }
-	
+
 }
 @media screen and (max-width: 360px) {
     .navbar a {
@@ -623,10 +734,10 @@ textarea {
         width: 100%;
         margin: 20px 0;
     }
-	.img-resenia{
-		width: 100%;
-	}
-	
+    .img-resenia{
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 575.98px) {
@@ -679,9 +790,12 @@ textarea {
         width: 100%;
         margin-top: 0;
     }
-	.img-resenia{
-		width: 100%;
-	}
+    .img-resenia{
+        width: 100%;
+    }
+    .about .contenedor-cartas .card{
+        width: 100%;
+    }
 }
 
 
@@ -719,18 +833,32 @@ textarea {
         font-weight: 600;
         margin-bottom: 10px;
     }
+    .about .contenedor-cartas .card{
+        width: 50%;
+    }
 }
 @media (max-width:578px){
-	aside{
-		width: 100%;
-		height: auto;
-	}
-	.main{
-		width: 100%;
-	}
-	.navbar{
-		width: 100%;
-	}
+    aside{
+        width: 100%;
+        height: auto;
+    }
+    .main{
+        width: 100%;
+    }
+    .navbar{
+        width: 100%;
+    }
+    .about .contenedor-cartas{
+        flex-wrap: wrap;
+        padding: 0px;
+        flex-direction: row;
+    }
+    .about .contenedor-cartas .card{
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+    }
+
 }
 @media (max-width: 991.98px) {
     .main .articulo .portada{
