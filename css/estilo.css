@@ -71,7 +71,8 @@ h1{
 
 /* MENU - links con mouse encima*/
 .navbar a:hover {
-    background-color: #000;
+    background-color: #FFF;
+	color: #990000;
 }
 
 /* MENU - Activo */
@@ -81,6 +82,10 @@ h1{
 }
 .active a{
     color:#000;
+}
+.active:hover{
+	background: #000 !important; 	
+	color: #FFF !important;
 }
 /* MENU Magia responsive  */
 
@@ -456,6 +461,9 @@ label {
     padding: 30px;
     border-radius: 5px;
 
+}
+#paraJaidear{
+	display: none;
 }
 form {
     margin:0 auto;
